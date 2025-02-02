@@ -1,0 +1,230 @@
+:root {
+  --color-primary-1: hsl(300, 43%, 22%);
+  --color-primary-2: hsl(333, 80%, 67%);
+  --color-secondary-1: hsl(28, 84%, 61%);
+  --color-secondary-2: hsl(301, 10%, 53%);
+  --color-neutral-1: hsl(303, 10%, 53%);
+  --color-neutral-2: hsl(300, 24%, 96%);
+  --color-neutral-3: hsl(0, 0%, 100%);
+  --color-neutral-4: hsl(301, 23%, 96%);
+}
+
+h1, h2, h3 h4 h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  background-color: var(--color-neutral-3);
+  padding: 75px 24px 100px 24px;
+  font-family: "League Spartan";
+  color: var(--color-primary-1);
+  display: flex;
+  flex-direction: column;
+  gap: calc(50rem/16);
+  max-width: calc(327rem/16);
+  background-image: url(./assets/images/bg-pattern-top-mobile.svg), url(./assets/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+}
+
+.main_information{
+  display: flex;
+  flex-direction: column;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(26rem/16);
+}
+
+.header__text {
+  font-size: calc(40rem/16);
+  line-height: calc(32rem/16);
+  font-weight: 700;
+  letter-spacing: -1.42px;
+  text-align: center;
+}
+
+.body__text {
+  color: var(--color-secondary-2);
+  font-size: calc(19rem/16);
+  font-weight: 500;
+  line-height: calc(25rem/16);
+  letter-spacing: -0.63px;
+  text-align: center;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(50rem/16);
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16rem/16);
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  padding-left: 5px;
+  background-color: var(--color-neutral-4);
+  border-radius: 8px;
+}
+
+.review__stars{
+  display: flex;
+  gap: calc(8.45rem/16);
+}
+
+.review__content{}
+
+.review__content--text {
+  font-size: calc(17rem/16);
+  font-weight: 700;
+  text-align: center;
+}
+
+.review__star {
+  color: var(--color-secondary-1)
+}
+
+.opinions{
+  display: flex;
+  flex-direction: column;
+  gap: calc(16rem/16)
+}
+.opinion {
+  background-color: var(--color-primary-1);
+  display: flex;
+  flex-direction: column;
+  gap: calc(26rem/16);
+  border-radius: 8px;
+  padding: 42px 32px 32px 32px;
+  min-height: 172px;
+}
+
+.opinion__person {
+  display: flex;
+  flex-direction: row;
+  gap: calc(23rem/16);
+  align-items: center;
+}
+.opinion__avatar {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+}
+.opinion__personal-data {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;   
+  max-height: calc(40rem/16);
+  gap: calc(4rem/16)
+}
+
+.opinion__name {
+  color: var(--color-neutral-3);
+  font-weight: 700;
+  font-size: calc(17rem/16);
+}
+.opinion__verified {
+  color: var( --color-primary-2);
+  font-weight: 400;
+  font-size: calc(17rem/16);
+}
+
+.opinion__notice {
+  color: var(--color-neutral-3);
+  line-height: calc(22rem/16);
+  letter-spacing: -0.3px;
+  font-size: calc(17rem/16);
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: calc(1110rem / 16)) {
+  .container {
+    max-width: calc(1110rem/16);
+    padding: 109px 168px 100px 168px;
+    gap: calc(70rem/16);
+    background-image: url(./assets/images/bg-pattern-top-desktop.svg), url(./assets/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 0%, 100% 100%;
+  }
+
+  .main_information {
+    display: grid;
+    grid-template-columns: 1fr 540px;
+    gap: calc(125rem/16)
+  }
+
+  .header__content {
+    gap: calc(26rem/16);
+  }
+
+  .header__text {
+    font-size: calc(56rem/16);
+    line-height: calc(48rem/16);
+    letter-spacing: -2px;
+    text-align: left;
+  }
+
+  .body__text{
+    text-align: left;
+  }  
+
+  .reviews {
+    padding-top: 10px;
+  }
+
+  .reviews__first-review {
+  }
+  .reviews__second-review {
+    padding-left: 47px;
+  }
+  .reviews__third-review {
+    padding-left: 95px;
+  }
+
+  .review {
+    max-width: 413px;
+    flex-direction: row;
+    min-height: calc(26rem/16);
+    text-align: left;
+    justify-content: left;
+    padding-left: 32px;
+    gap: calc(32rem/16)
+  }
+
+  .opinions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: calc(30rem/16)
+  }
+  .opinions__second-opinion{
+    padding-top: 16px;
+  }
+
+  .opinions__third-opinion {
+    padding-top: 32px;
+  }
+  .opinion {
+    max-width: calc(286rem/16);
+    padding: 43px 32px 20px 32px;
+  }
+}
