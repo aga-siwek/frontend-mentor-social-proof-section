@@ -1,4 +1,4 @@
-{
+{ "homepage": "https://aga-siwek.github.io/frontend-mentor-social-proof-section/",
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
