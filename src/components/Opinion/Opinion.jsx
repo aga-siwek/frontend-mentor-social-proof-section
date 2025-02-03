@@ -13,7 +13,7 @@ function Opinion(props){
     return (
         <div className="opinion">
             <div className="opinion__person">
-                <img src={props.avatar} className="opinion__avatar"/>
+                <img src={props.avatar} className="opinion__avatar" alt="avatar with person photo"/>
                 <div className="opinion__personal-data">
                     <div className="opinion__name"><p>{props.name}</p></div>
                     <div className="opinion__verified"><p>{verified()}</p></div>

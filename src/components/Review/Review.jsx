@@ -13,7 +13,7 @@ function Review(props){
     const getContent =() => {
         if (props.star===1){
             return (
-                <div className="review__content">
+                <div className="review__content" >
                     <h2 className="review__content--text">Rated {props.star} Star in {props.place}</h2>
                 </div>)
         }
