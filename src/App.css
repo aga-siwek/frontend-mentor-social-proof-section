@@ -160,7 +160,7 @@ h1, h2, h3 h4 h5, h6, p {
 @media (min-width: calc(1110rem / 16)) {
   .container {
     max-width: calc(1110rem/16);
-    padding: 109px 168px 100px 172px;
+    padding: 109px 168px 100px 176px;
     gap: calc(70rem/16);
     background-image: url(./assets/images/bg-pattern-top-desktop.svg), url(./assets/images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat, no-repeat;
