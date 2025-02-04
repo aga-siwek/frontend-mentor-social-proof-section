@@ -211,7 +211,7 @@ h1, h2, h3 h4 h5, h6, p {
   }
 
   .review__content--text {
-    font-size: calc(18rem/16);
+    font-size: calc(16rem/16);
   }
 
   .opinions {
