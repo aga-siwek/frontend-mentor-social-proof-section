@@ -16,7 +16,7 @@ h1, h2, h3 h4 h5, h6, p {
 
 
 .container {
-  background-color: var(--color-neutral-3);
+  background-color: transparent;
   padding: 75px 24px 100px 24px;
   font-family: "League Spartan";
   color: var(--color-primary-1);
@@ -24,9 +24,6 @@ h1, h2, h3 h4 h5, h6, p {
   flex-direction: column;
   gap: calc(50rem/16);
   max-width: calc(327rem/16);
-  background-image: url(./assets/images/bg-pattern-top-mobile.svg), url(./assets/images/bg-pattern-bottom-mobile.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top, bottom;
 }
 
 .main_information{
@@ -162,9 +159,7 @@ h1, h2, h3 h4 h5, h6, p {
     max-width: calc(1110rem/16);
     padding: 109px 168px 100px 158px;
     gap: calc(76rem/16);
-    background-image: url(./assets/images/bg-pattern-top-desktop.svg), url(./assets/images/bg-pattern-bottom-desktop.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 0% 0%, 100% 100%;
+    
   }
 
   .main_information {
