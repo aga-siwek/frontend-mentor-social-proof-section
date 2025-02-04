@@ -158,7 +158,7 @@ h1, h2, h3 h4 h5, h6, p {
   .container {
     max-width: calc(1110rem/16);
     padding: 100px 168px 100px 152px;
-    gap: calc(68rem/16);
+    gap: calc(70rem/16);
     
   }
 
