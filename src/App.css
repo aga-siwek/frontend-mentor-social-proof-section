@@ -85,6 +85,7 @@ h1, h2, h3 h4 h5, h6, p {
   gap: calc(8.45rem/16);
 }
 
+
 .review__content{}
 
 .review__content--text {
@@ -209,6 +210,14 @@ h1, h2, h3 h4 h5, h6, p {
   .review__stars {
     gap: calc(8rem/16);
   }
+  
+  .review__star {
+    color: var(--color-secondary-1);
+}
+
+.review__star--not-active {
+  color: var(--color-neutral-1);
+}
 
   .review__content--text {
     font-size: calc(17rem/16);

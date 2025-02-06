@@ -1,5 +1,5 @@
 import "./App.css";
-import Review from "./components/Review/Review.jsx";
+import Review from "./components/review/review.jsx";
 import Opinion from "./components/Opinion/Opinion.jsx";
 import avatar_anne from "./assets/images/image-anne.jpg"
 import avatar_colton from "./assets/images/image-colton.jpg"
@@ -19,7 +19,7 @@ function App() {
         </header>
         {/* review */}
         <div className='reviews' role="contentinfo">
-          <div className='reviews__first-review' ><Review star={5} place="Reviews" /></div>
+          <div className='reviews__first-review' ><Review star={1} place="Reviews" /></div>
           <div className='reviews__second-review' ><Review star={5} place="Report Guru" /></div>
           <div className='reviews__third-review' ><Review star={5} place="BestTech" /></div>
         </div>
