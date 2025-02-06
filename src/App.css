@@ -86,8 +86,6 @@ h1, h2, h3 h4 h5, h6, p {
 }
 
 
-.review__content{}
-
 .review__content--text {
   font-size: calc(17rem/16);
   font-weight: 700;
@@ -96,6 +94,10 @@ h1, h2, h3 h4 h5, h6, p {
 
 .review__star {
   color: var(--color-secondary-1)
+}
+
+.review__star--not-active {
+  color: var(--color-neutral-1);
 }
 
 .opinions{
@@ -188,13 +190,10 @@ h1, h2, h3 h4 h5, h6, p {
     padding-top: 10px;
   }
 
-  .reviews__first-review {
-  }
-
   .reviews__second-review {
     padding-left: 47px;
   }
-  
+
   .reviews__third-review {
     padding-left: 95px;
   }
@@ -213,14 +212,6 @@ h1, h2, h3 h4 h5, h6, p {
     gap: calc(8rem/16);
   }
   
-  .review__star {
-    color: var(--color-secondary-1);
-}
-
-.review__star--not-active {
-  color: var(--color-neutral-1);
-}
-
   .review__content--text {
     font-size: calc(17rem/16);
   }
