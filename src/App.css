@@ -190,9 +190,11 @@ h1, h2, h3 h4 h5, h6, p {
 
   .reviews__first-review {
   }
+
   .reviews__second-review {
     padding-left: 47px;
   }
+  
   .reviews__third-review {
     padding-left: 95px;
   }
